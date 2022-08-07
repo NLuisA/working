@@ -27,7 +27,7 @@ class _SingInState extends State<SingIn> {
           ], begin: Alignment.topCenter),
         ),
         child: ListView(
-          padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 10),
+          padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 30),
           children: <Widget>[
             Column(
               mainAxisAlignment: MainAxisAlignment.center,

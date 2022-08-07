@@ -82,9 +82,8 @@ class _LogoutFormState extends State<LogoutForm> {
                     _pass = data;
                   },
                   validator: (data) {
-                    // ignore: prefer_is_empty
-                    if (data!.trim().length == 0) {
-                      return 'Pass no Valido';
+                    if (data!.trim().isEmpty) {
+                      return 'Rellene este campo';
                     }
                     return '';
                   },
@@ -101,7 +100,9 @@ class _LogoutFormState extends State<LogoutForm> {
                     _passConf = data;
                   },
                   validator: (data) {
-                    // ignore: prefer_is_empty
+                    if (data!.trim().isEmpty) {
+                      return 'Rellene este campo';
+                    }
                     if (data != _pass) {
                       return 'Contraseñas No Coinciden';
                     }
@@ -113,7 +114,7 @@ class _LogoutFormState extends State<LogoutForm> {
                 ),
                 SizedBox(
                   width: double.infinity,
-                  height: 30.0,
+                  height: 40.0,
                   child: FlatButton(
                     color: const Color.fromARGB(255, 42, 148, 104),
                     onPressed: _submit,

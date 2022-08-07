@@ -1,7 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/Material.dart';
-import 'package:sqflite/sqflite.dart';
 import 'package:working/src/widgets/icon_container.dart';
 
 import 'package:working/src/widgets/logout_form.dart';
@@ -29,7 +28,7 @@ class _SingUpState extends State<SingUp> {
           ], begin: Alignment.topCenter),
         ),
         child: ListView(
-          padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 10),
+          padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 30),
           children: <Widget>[
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -41,7 +40,7 @@ class _SingUpState extends State<SingUp> {
                 Text('Bienvenido',
                     style: TextStyle(
                         fontFamily: 'PermanentMarker', fontSize: 35.0)),
-                Text('Regístrate',
+                Text('Registrate',
                     style: TextStyle(
                         fontFamily: 'PermanentMarker', fontSize: 25.0)),
                 Divider(

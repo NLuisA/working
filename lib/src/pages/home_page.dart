@@ -26,10 +26,10 @@ class _HomePageState extends State<HomePage> {
             gradient: LinearGradient(colors: <Color>[
               Color.fromARGB(255, 12, 233, 96),
               Color.fromARGB(0, 175, 162, 161)
-            ], begin: Alignment.topCenter),
+            ], begin: Alignment.topCenter, end: Alignment.bottomCenter),
           ),
           child: ListView(
-            padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 70),
+            padding: EdgeInsets.symmetric(horizontal: 30, vertical: 70),
             children: <Widget>[
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
