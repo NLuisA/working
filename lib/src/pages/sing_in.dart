@@ -34,7 +34,7 @@ class _SingInState extends State<SingIn> {
               // ignore: prefer_const_literals_to_create_immutables
               children: <Widget>[
                 IconContainer(
-                  url: 'images/Laburo.png',
+                  url: 'images/WK.png',
                 ),
                 Text('Login',
                     style: TextStyle(
